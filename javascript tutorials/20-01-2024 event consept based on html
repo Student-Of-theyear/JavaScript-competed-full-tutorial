@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS with ApnaCollege</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button onclick="console.log('button was click');alert('Hello')">click me!</button>
+<button ondblclick="console.log('button was click 2x')">click me 2 times!</button>
+<!-- <div onmouseover="console.log('you are inside div')">This is a div</div>  -->
+<div>This is a box</div>
+<button id="btn1">btn1!</button>
+<br>
+<button id="mode">change mode</button>
+<p>Welcome to my website!</p>
+    <script src="first.js"></script>
+</body>
+</html>

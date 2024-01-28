@@ -1,0 +1,90 @@
+// Create an array to store companies -> "Bloomber", "Microsoft", "Uber", "Google", "IBM", "Netfilx"....?
+
+// let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+
+ //Qs-a- Remove the first company from the array...?
+//  companies.shift();  //=> starting se element ko delete krta hai
+
+//Qs-b-remove Uber & Add Ola in its place......?
+// companies.splice(2, 1, "Ola");
+
+//Qs-c-- Add Amazon at end
+// push method => element ko "end" me add krta "aur" Unshift=> "starting" me element ko add krta hai
+// companies.push("Amazon");
+
+
+//                    "Functions"
+// Block of code that preforms a specific task TextTrackList,can be invoked whenever needed 
+// function ek asa block of code hota hai jo hamare liye kuchh specific task preform krke deta hai
+
+// function myFunction() {
+//     console.log("welcome to Apna college!");
+//     console.log("we are learing JS : ");
+// }
+// myFunction();
+// myFunction();  // 2nd bar out ke liye 2nd time call kr denge
+
+// jitne bhi hmare function ke andar input hote hai unhe ham parameter kahate hai......!
+
+// function myFunction(msg) {
+// // parameter -> input
+// console.log(msg * n);
+// }
+// myFunction("I Love JS");  // esi same parameter ko "Argument" kahate hai...! [(NaN) = NOT A NUMBER]
+
+
+// 1- function Definition ke andar jis variable ko hame use krte hai use parameter kahte hai
+// 2- function call ke andar jis value ko pass kr dete hai use argument kahte hai
+
+// make any function witch is sum of 2(two) number
+
+// function sum(x, y) {
+//     console.log(x + y);
+// }
+
+// function jo kuchh input lete hai to wo kuchh value bhi return krke dete hai 
+// uske liye hame "return" keyword ko use krna hota hai
+
+
+// function sum(x, y) {
+//     s = x + y;
+//     console.log("before return ");
+//     return s;
+// }
+// let val = sum(3, 4);
+// console.log(val);
+
+// jo hamare function ke parameters hote hai o "local variable hota hai function ka aur eske pass block scope
+// hota hai "block scope" => function ke block tak hi jinda rahte hai ({})...
+
+//                     "Arrow function"
+// Arrow functions funciton ko hi likhane ka compact(chhota) tarika hota hai
+
+// sum function
+// function sum(a, b) {
+//     return a+b;
+// }
+
+//       "Arrow version"....?
+// const arrowSum = (a, b) => { // for exequet..."arrowSUm"  
+//     console.log(a + b);   
+// };
+
+//multiplication function
+// function mul(a, b){
+//     return a*b;
+// }
+// aur enhi function ko ek aur compact krke likhne ka tarika hota hai "Arrow function" se!
+
+//        "Arrow version"
+// const arrowMul = (a, b) => {
+//    console.log(a*b);   // return a*b bhi kr skte hai 
+//   return a * b;
+// };
+
+
+// const printHello = () => {
+//     console.log("Hello Govind pandey");
+// };
+
+

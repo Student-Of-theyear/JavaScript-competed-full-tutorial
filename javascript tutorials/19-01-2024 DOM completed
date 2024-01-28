@@ -1,0 +1,100 @@
+//Attribute ke value ko get krne ke liye......?
+// let div = document.querySelector("div");
+// console.log(div);
+
+// let id = div.getAttribute("id");
+// console.log(id);
+
+// let name = div.getAttribute("name");
+// console.log(name);
+
+// let para = document.querySelector("p");
+// console.log(para.getAttribute("class"));
+
+//Agar hame kisi bhi Attribute ki value ko change krna ho to.....?
+// let para = document.querySelector("p");
+// console.log(para.setAttribute("clas", "Newcals")); //console ke elements me change hoga
+
+//console me=> div se  tags print ho jayenge & div.style-> se ek obj me sari syle hongi
+// let div = document.querySelector("div");
+
+// css me diye backgroundcolor change krana ho to js se to....?
+// div.style.backgroundColor = "green";
+
+//js se hi font ki size badhana ya ghatana ho to......?
+// div.style.fontSize = "26px"
+
+// Value change krni ho to......?
+// div.innerText = "Hello!";
+
+
+//Button creat krna hoga
+// let newButton = document.createElement("button");
+
+ //che to kuchh innerText de sakte hai...!
+// newButton.innerText = "click me!"; 
+
+//screen pr dikhane ke liye...!
+// console.log(newButton);
+
+//sabse pahale access krenge div ko
+// let div = document.querySelector("div");
+
+//agar mujhe paragraph se related access krna hai to para ko access krenge
+//let para = document.querySelector("p");
+
+// div ke andar (append)last me add kr denge
+//  div.append(newButton); 
+
+// div ke andr (prepend)start me add krne ke liye
+//  div.prepend(newButton);
+
+//agar mujhe kisi node se pahale aur uske bahar just starting me aad krna ho...!
+//  div.before(newButton);
+
+//agar mu kisi node se badme aur uske bahar just last me aad krna ho....!
+//  div.after(newButton);
+
+
+
+//2=> esi tarike se ham kisi heading ko add kr skte hai...to heading creat krenge
+// let newHeading = document.createElement("h1");
+
+//eske andar kuchh text add krenge...!
+// newHeading.innerHTML = "<i>Hi I am new!</i>";
+
+//av es new heading ko mtlb body ke andar add krenge lekin top pr add krenge....!
+// document.querySelector("body").prepend(newHeading);
+//bina HTML ko touch kiye js ke logic se hi ho gya....!
+
+
+
+//3=> wese hi elements ko delete bhi kr stke hai.....!
+//jese mujhe paragraph ko delete krna hai 
+// usase pahale mujhe access krna hoga......!
+
+// let para = document.querySelector("p");
+// para.remove();
+//to ref krne pr para delete ho gya hoga
+
+
+//Qs=> Create a new button element. Give it a text "Click me", background color of red & text color of white
+//     Insert the button as the first element inside the body tag.
+
+let newButton = document.createElement("button");
+newButton.innerText = "click me";
+
+newButton.style.color = "white";
+newButton.style.backgroundColor = "red";
+document.querySelector("body").prepend(newButton);
+
+//Qs=> Creat a <p> tag in html, give it a class & some styling. Now create a new class in CSS and try to 
+//  apppend this class to the <p> element. 
+//  Did you notice,how you overwrite the class name when you add a new one..? Solve this problem using classList..?
+
+
+
+
+
+
+

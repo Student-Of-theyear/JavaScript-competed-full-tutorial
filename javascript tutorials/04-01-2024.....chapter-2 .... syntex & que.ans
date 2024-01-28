@@ -1,0 +1,77 @@
+// Basic of for loop....?
+// print "Govind pandey" 5times;
+// for(let i = 1; i<=5; i++) {
+//     console.log("Govind pandey");
+// }
+// console.log("loop has ended");
+
+
+// calculate sum of 1 to 5.....?
+// let sum = 0;
+// for(let i = 1; i<=5; i++) {
+//     sum = sum + i;
+// }
+// console.log("sum = ", sum);
+// console.log("loops has ended");
+
+// Basic of infinite loop : (A loop that never ends) we should never do in a program because ye loop laways run 
+// krta rhega..!
+// exm => for(let i = 1; i>=0; i++) {
+//    console.log("i =", i)
+// } never do in your system otherwise crase your system 
+
+// while loops......?
+// print 1 to 5 with the help of while loop..?
+// let i = 1; //initilize (suruwat)
+// while(i<=5) { // (stop condition) (kab tak chalega)
+//     console.log("i =", i);
+//     i++; // updation condition (kis tarike se update hoga)
+// }
+
+// for-of loop.....? (string & arrays ke liye use hota hai); object ke liye nhi
+
+// let str = "javascript";
+// let size = 0;
+// for(let val of str) { // i = iterator -> eske andar characters aa jayenge
+//     console.log("val=", val);
+//     size++;
+// }
+// console.log("string size =", size); // javascript = 10 hai to 10 print kr ke dega
+
+// for in loop.....? (ese ham object ke liye use krte hai)
+
+// let student ={
+//     name : "Govind pandey",
+//     age : 19,
+//     cgpa : 8.9,
+//     isPass : true,
+// };
+// for(let key in student) {
+//     console.log("key =", key, "value =", student[key]); // (key and uski value print karane ke liye)
+// }
+
+
+//Qs-> print all the even number from 0 to 100....?
+
+// for(let num = 0; num <= 100; num++) {
+//     if(num%2 === 0) { // condition of even number if print odd num-> if(num%2 !==){ only (!) 
+//       console .log("num =", num);
+//     }
+// }
+
+//Qs-> creat a game where you start with any random game number. Ask the user to keep guessing the  
+//    game number until the user enters correct value.......?
+  
+// let gameNum = 25;
+// let userNum = prompt("Guess the game number : ");//(es usernum ko game num ke sath match krne ki kosis krna hai to)
+
+// while(userNum != gameNum) { // ek while loop chalayenge jb tk user sahi num match nhi kr deta
+//     userNum = prompt("you entered wrong number.Guess againr : ");
+// }
+// console.log("congratulation, you entered the right number");
+
+
+
+
+
+

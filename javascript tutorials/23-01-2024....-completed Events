@@ -1,0 +1,194 @@
+// creat an normal object
+// const student = {
+//     fullName : "Govind pandey",
+//     marks : 94.4,
+//     printMarks : function() {
+//         console.log("marks =", this.marks); //this => obj ki bat kr rhe hai(this.marks => student.marks)
+//     },
+// };
+// // next new obj
+// const employee = {
+//     calTex() {
+//         console.log("tex rate is 10%");
+//     },
+// };
+
+// new employee come
+// const govind = {
+//     salary: 50000
+// };
+// hame student wale method me govind wale property ko bhi use krna chahte hai to.....!
+// govind.__proto__ = employee;     // (. _ _proto_ _)se hame prototype ko set kr skte hai yani dusri obje ke fun..
+
+
+//Creat another types boj through Classes in Js
+//class ek single template hoti hai jiske bases pr bhot sari diff different obj ko creat kr skte hai
+// make a factory
+// class ToyotaCar {
+//     start() {
+//         console.log("start");
+//     }
+//     stop() {
+//         console.log("stop");
+//     }
+//     //sath ke sath ham ko variable bhi define kr sakte hai..!
+//     setBrand(brand) {
+//         this.brand = brand;
+//     }
+// }
+//ye to ho gya calss ab es template se obj ko creat krna hai to
+//(let myObj = new MyClass(); method is creat obj)
+
+// let fortuner = new ToyotaCar();
+// fortuner.setBrand("fortuner");
+// let lexus = new ToyotaCar();
+// lexus.setBrand("lexus");
+
+// Constructor() method in JS....?
+// first time me jav obj creat ho rhi us time kuchh kaam krawana hai wo kaam hamare liye constructor krwata hai
+// chahe to ham multipal argument bhi bhej skte hai...!
+// class ToyotaCar {
+//     constructor(brand, mileage) {
+//         console.log("creating new object");
+//         this.brand = brand;
+//         this.mileage = mileage;
+//     }
+//     start() {
+//         console.log("start");
+//     }
+//     stop() {
+//         console.log("stop"); 
+//     }
+// }
+
+// let fortuner = new ToyotaCar("fortuner", 10); // print constructor
+// console.log(fortuner);
+// let lexus = new ToyotaCar("lexus", 12);
+// console.log(lexus);
+
+// Inheritance in JS...? => jv ek class se property & methods dusri class ki taraph pass down ho jate hai
+// creat a class...1st->exm
+
+// class Parent {
+//     hello() {
+//         console.log("hello");
+//     }
+// }
+// class Child extends Parent {}
+
+// let obj = new Child();
+
+// Creat a new class person....!2nd->Exm
+
+// class person {
+//     eat() {
+//         console.log("eat");
+//     }
+//     sleep() {
+//         console.log("sleep");
+//     }
+// }
+// class Engineer extends person {  // (extends person se sara inherit ho gya)...!
+//     work() {
+//         console.log("solve problems, bulid something");
+//     }
+// }
+
+// class Doctor extends person {  //(multipal class bhi same class se inherit kr skati hai)...!
+//     work() {
+//         console.log("treat patients");
+//     }
+// }
+
+// let govindObj = new Engineer();
+
+
+//Qs=1> You are creating a website for your college. Create a class User with 2 properties, name & email.
+//     It also has a method called viewData() that allows user to view website data......?
+
+// let DATA = "secret information"
+// class user {
+//     constructor(name, email) {
+//         this.name = name;
+//         this.email = email;
+//     }
+//     viewData() {
+//         console.log("data =", DATA);
+//     }    
+// }
+// // after class we can make user obj....!
+// let student1 = new user("govnd", "abc@email.com");
+// let student2 = new user("sudhanshu", "sudh@email.com");
+
+// let teacher1 = new user("dean", "dean@college.com");
+
+
+//Qs-2> Creat a new class called Admin which inherits from User. Add a new method called editData to Admin
+//     that allowsit to edit website data.....?
+
+
+// let DATA = "secret information"
+// class user {
+//     constructor(name, email) {
+//         this.name = name;
+//         this.email = email;
+//     }
+//     viewData() {
+//         console.log("data =", DATA);
+//     }    
+// }
+// make a new class...jo hamari user class se inherits kre en value ko.....!
+// class Admin extends user {
+// so creat a constructor
+//     constructor(name,email) { // jiske pass hamra name & email aa rha hai 
+// aur jb bhi ham child class ke andar constructor ke creat krte hai parent ke constructor ko call krna hota hai.!
+//     super(name, email);
+//     }
+//     editData() {    // make a new editData method jo data ko edit kre...!
+//         DATA = "some new value";
+//     }
+// }
+
+// // after class we can make user obj....!
+// let student1 = new user("govnd", "abc@email.com");
+// let student2 = new user("sudhanshu", "sudh@email.com");
+
+// let teacher1 = new user("dean", "dean@college.com");
+
+// // make a new user Admin...!
+// let admin1 = new Admin("admin", "admin@college.com"); // ye info perform ke liye constructor chahiye
+
+
+
+// (extra knowldge)  ERROR HANDLING.....?
+
+// let a = 5;
+// let b = 10;
+// console.log("a =", a);
+// console.log("b =", b);
+// console.log("a+b =", a+b);
+// console.log("a+b =", a+c); // error how we know
+// console.log("a+b =", a+b);
+// console.log("a+b =", a+b); 
+
+
+let a = 5;
+let b = 10;
+console.log("a =", a);
+console.log("b =", b);
+console.log("a+b =", a+b);
+try {
+    console.log("a+b =", a+c);
+} catch (err) {
+    console.log(err);
+}
+console.log("a+b =", a+c); // error how we know
+console.log("a+b =", a+b);
+console.log("a+b =", a+b); 
+
+
+
+
+
+
+

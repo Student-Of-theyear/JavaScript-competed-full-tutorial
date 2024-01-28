@@ -1,0 +1,105 @@
+// if you want to print js code in vs code then install the node editer and run browser then linked js file in html
+// any variable to print statement -> console.log("variable name");
+// print Hello world ? 
+// console.log("Hello world"); save & referece => Hello world
+// imp.point=> reserved word can't be veriable name
+// As=> console.log("console"); print=>Error while any one word different then print=> variable
+//  let a = 5;
+//  console.log(a);
+// make any object we can use let 'or' const 
+const student = {
+    fullName : "Govind pandey",
+    age : 18,
+    cgpa : 9.2,
+    isPass : true,
+} 
+console.log(student["cgpa"]); // student => age,cgpa,isPass,fullName...
+/* Qs- creat a const object called "product" to information => price,productName, Rating, Offer ?*/
+
+// const product = {
+//     Name : "ballpen",
+//     price : 280,
+//     Rating : 4,//star
+//     offer : 6,
+// }
+// console.log(product);
+
+// print Instagramm prophile information ?
+
+// const prophile = {
+//     userName : "Govind pandey",
+//     isFollow : false,
+//     followers : 30000,
+//     following : 38,
+// }
+// console.log(prophile);
+
+// if formate..... ?
+
+// let mode =  "dark"; //"light";
+// if (mode === "dark") {
+//     color = "black"
+// }
+// if (mode === "light") {
+//     color = "white"
+// };
+// console.log(color);
+
+// if else formet.... ?
+
+// let age = 18; // 25; => Not vote
+
+// if (age >= 18) {
+//     console.log("vote");
+// } else {
+//     console.log("Not vote");
+// }
+
+// Number "even" 'or' "odd"......?
+
+// let num = 10; // 7 => "odd"
+// if (num%2 === 0) {
+//     console.log("even");
+// } else {
+//     console.log("odd");
+// }
+
+// else if statement.....?
+
+/* Qs- mode dark - black if mode blue - blue if mode pink - pink print the help of 
+else if formate...AbortController....? */
+
+// let mode = "blue"; // mode pink - pink print hota / mode dark - black.....
+// if (mode === "dark") {
+//     color = "black";
+// } else if (mode === "blue") {
+//     color = "blue";
+// } else if (mode === "pink") {
+//     color = "pink";
+// } else {
+//     color = "white";
+// }
+// console.log(color);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

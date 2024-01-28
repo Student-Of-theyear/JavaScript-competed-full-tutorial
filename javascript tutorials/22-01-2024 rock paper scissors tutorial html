@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <!-- choise user ko dikhna padegi user jo choose krega uske liye wo chij dikhai de -->
+    <!-- div banane ka sork cut key (.idname + enter) 3 choices display krayene-->
+    <div class="choices">
+    <!-- hamne rock ya paper ya scissor pr kisapr click kiya hai esi liye suruwa me hi id denge -->
+        <div class="choice" id="rock"> <img src="./images/rock.png"> </div>
+        <div class="choice" id="paper"> <img src="./images/paper.png"> </div>
+        <div class="choice" id="scissor"> <img src="./images/scissor.jpg"> </div>
+    </div>
+ <!-- div me score board banane ka sortcutkey(.score-board + enter) esme user & computer ka score dikhana hai -->
+    <div class="score-board">
+<!-- Apana aur computer dono ka score-board dikhana hai to    -->
+        <div class="score"> <p id="user-score">0</p> <p>you</p> </div>
+        <div class="score"> <p id="comp-score">0</p> <p>comp</p> </div>
+    </div>
+<!-- hamare pass kuchh msg hona chahiye jo hame bataye jit rhe ya drow ho rha ya current turn me resul kya hai  -->
+    <div class="msg-container"> <p id="msg">Play your move</p></div>
+    <script src="first.js"></script>
+</body>
+</html>

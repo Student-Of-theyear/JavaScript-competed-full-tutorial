@@ -1,0 +1,108 @@
+//                 Chapter - 4 
+// Arrays.......? Arrays information store krane ka linear tarika hota hai.
+// linear = single line ke andr value store ho jayega
+
+//        "Number"
+// let marks = [97, 87, 76, 53, 68];
+// console.log(marks);
+// console.log(marks.length);
+
+//       "String type"
+// let heros = ["Govinda", "salamankhan", "ajaydevgan", "sanjaydat"];
+// console.log(heros);
+
+//     Array indices..........? => plural form of index
+// arr[0],arr[1],arr[2]......explane kr we know that what is value
+//              "Exmple"
+// arr[97,82, 64, 68, 36] diya hai....
+//  [97] [82] [64] [68] [36] => linear fasion ke andar store ho jayga
+//    0   1     2    3   4
+// linear = single line ke andr value store ho jayega
+//arr[0],arr[1],arr[2]......value ko access krane ke liye...
+
+// let marks= [86, 85, 65, 78, 66];
+// console.log(marks);
+// console.log(marks.length); // referece me => marks[0]/[1]/[2]....something 
+
+
+// looping an array......?
+// useing a for loop
+// let heros = ["ironman", "thro", "hulk", "shaktiman", "spiderman", "govinda"];
+
+//  for(let i = 0; i < heros.length; i++) {
+//     console.log(heros[i]);
+//  }
+//         useing a "for of loop"...?
+
+// for(let hero of heros) {
+//     console.log(hero);
+// }
+
+// let citys = ["delhi", "mumbi", "lucknow", "hydervad", "bihar"];
+// for(let city of citys) {
+//    console.log(city);
+//     console.log(city.toUpperCase());
+// }
+
+//Qs-> for a given array with marks of students-> [85, 97, 44, 37, 76, 60] 
+//find the average marks of the ectire class
+
+// let marks = [85, 97, 44, 37, 76, 60];
+// let sum = 0;
+// for(let value of marks) {
+//     sum += value   //sum = sum + value 
+// }
+// let avg = sum; / marks.length;
+// console.log(`avg marks of the class = ${avg}`);
+
+
+// let marks = [85, 97, 44,37,76,60];
+// let sum = 0;
+// for(let value of marks) {
+//   sum += value; // sum = sum + value
+// }
+// //console.log(sum); sum nikalne ke liye
+// let avg = sum / marks.length;
+// console.log(`avg marks of the call = ${avg}`);
+
+
+//Qs-> for a given array with prices of 5 times-> [250, 645, 300, 900, 50] 
+// All items have an offter of 10% OFF on them.Change the array to store final price after applying offer.
+
+//As-> 300-10%off = 30 => 300-30 = 270
+//                  The help of  "for of loop"
+
+// let items = [250, 645, 300, 900, 50];
+// let i = 0;
+// for(let value of items) {
+//   let offer = value / 10;
+//   items[i] = items[i] - offer;
+//   console.log(`value after offer = ${items[i]}`);
+//   i++;
+// }
+
+//               The help of "for loop" 
+
+// let items = [250, 645, 300, 900,50];
+// for(let i=0; i<items.length; i++) {
+//   let offer = items[i] / 10;
+//   items[i] -= offer; // items[i] = items[i] - offer
+// }
+// console.log("value after offer", items);
+
+// Array method........?
+// 1- push() : add to end => array ke end me chijo ko add krna !
+
+// let foodItems = ["potato", "apple", "litchi", "tomato"];
+// foodItems.push("chips", "burger", "paneer");
+// console.log(foodItems);
+
+//2- pop() : delete from and & return..........? end se items ko delete phir return krke de deta hai
+
+//  let foodItems = ["potato", "apple", "litchi", "tomato"];
+//  console.log(foodItems);
+//  let deletedItem = foodItems.pop(); // -> deletedItem peint krke dega
+//  console.log(foodItems);
+//  console.log("deleted", deletedItem);
+
+

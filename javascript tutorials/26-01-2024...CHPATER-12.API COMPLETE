@@ -1,0 +1,50 @@
+// API.........? 
+// HAM kuchh request send krte hai aur data receve kr sakte hai....!
+//jo brower se data mil rha tha ham js ke jariye data pana chahte hai.....?
+// const URL = "https://cat-fact.herokuapp.com/facts";
+
+
+// //async-await se Es API ko execute krenge...! (usek liye Asynchronous fun banana hoga)
+// const getFacts = async () => {
+//     console.log("getting data....");  // yha print bhi krwa skte hai..
+//    let response = await fetch(URL);  //fatch ko use krenge jisko call krenge to hame kuchh response dega
+//    console.log(response);
+// }
+
+
+//JSON():method..........?
+//JSON() method: esase hame actiual useable data nikalte hai response object ke jariye...!
+// const URL = "https://cat-fact.herokuapp.com/facts";
+
+// const getFacts = async () => {
+//     console.log("getting data...."); 
+//    let response = await fetch(URL);  
+//    console.log(response);
+// // JSON KO use krne ke liye jo bhi hamara response hai uske upr .JSON ko call lagate hai
+//    let data = await response.json(); //.json 2nd promise return krta hai esilye await ko use krte hai
+//    console.log(data); // ye data hamara useable data hoga...!
+//    console.log(data[0],text); //0/1/2.. text ko dekhne ke liye kya info hai....!
+// };
+
+
+// HAM chahe to ese HTML Page ke andar ese print kra skte hai>......?   1st=> html me para me id="calss" dekr
+const URL = "https://cat-fact.herokuapp.com/facts";
+//Para ko access krne ke liye....!
+const factPara = document.querySelector("#fact");
+//button ko access krane ke liye...!(1st ham HTML me btn ko id="class" denge)
+const btn = document.querySelector("#btn");
+
+const getFacts = async () => {
+    console.log("getting data...."); 
+   let response = await fetch(URL);  
+   console.log(response);
+// JSON KO use krne ke liye jo bhi hamara response hai uske upr .JSON ko call lagate hai
+   let data = await response.json(); //json 2nd promise return krta hai esilye await ko use krte hai
+   factPara.innerText = data[0].text; //text ko set kr denge...!
+};  //output me getFacts() krenge to (HTML ke browser pr bhi facts likha huwa print ho jayega....!)
+
+//add eventListener = jese hi click kre wese getFact wala fun run ho..to wese hi hamare liye kuchh data aa jaye.!
+btn.addEventListener("click", getFacts);
+
+
+
